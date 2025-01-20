@@ -1,0 +1,365 @@
+/* General Styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    overflow: hidden;
+    background-color: white;
+    padding-left: 5px;
+}
+
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #334050;
+    text-align: center;
+    padding: 30px 60px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 7px;
+}
+
+/* Menu Styling */
+.menu {
+    float: right;
+    width: 100%;
+}
+
+/* Responsive Menu Styles */
+@media screen and (max-width: 768px) {
+    ul {
+        padding-left: 0;
+        text-align: right;
+    }
+
+    li {
+        float: none;
+        display: block;
+    }
+
+    li a, .dropbtn {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .menu {
+        float: none;
+    }
+
+    .menu ul {
+        display: none;
+        width: 100%;
+    }
+
+    .menu ul.show {
+        display: block;
+    }
+
+    .icon {
+        display: block;
+        cursor: pointer;
+        color: #334050;
+        padding: 15px;
+        font-size: 24px;
+        text-align: right;
+        background-color: #f1f1f1;
+    }
+}
+
+/* Dropdown Menu */
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.logoImg {
+    width: 80px;
+    height: 80px;
+}
+
+.image {
+    margin-top: -17px;
+}
+
+.dropdown-content a:hover {
+    color: #959592;
+}
+
+.imge_card {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+.home a {
+    color: #239ce0;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #959592;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.image {
+    padding-top: 12px;
+    padding-left: 40px;
+}
+
+/* Card and Buttons */
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+.buttons_right {
+    justify-content: center;
+    color: black;
+    border: none;
+    padding: 1% 2%;
+    cursor: pointer;
+    margin-right: 45px;
+    transform: translateY(30px);
+}
+
+.button_add {
+    position: absolute;
+    top: 190px;
+    right: 88%;
+    transform: translateX(-50%);
+    padding: 10px;
+    color: darkblack;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.button_add:hover {
+    color: #239ce0;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.li-size {
+    padding-right: 23px;
+}
+
+.tag-span {
+    color: #06294e;
+    font-size: 35px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: white;
+}
+
+.column {
+    float: right;
+    width: 15%;
+    padding: 0 2%;
+}
+
+@media (max-width: 768px) {
+    .column {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-top: 20px;
+}
+
+/* Table Styles */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Swiper and Card Styles for Desktop */
+@media (min-width: 1024px) {
+    .swiper-slide {
+        width: 50%;
+    }
+
+    .card {
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: white;
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .card button {
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .card button:hover {
+        opacity: 0.7;
+    }
+}
+
+/* Swiper Styles for Large Screens */
+@media (max-width: 1200px) {
+    .swiper-slide {
+        width: 50%;
+    }
+}
+
+/* Responsive Design for Medium and Small Screens */
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 100%;
+    }
+
+    .column {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    button.button_cart {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 12px;
+    }
+
+    button.button_cart {
+        padding: 8px 16px;
+    }
+}
+
+/* Background Animation */
+body {
+    background-color: #808080;
+    background-image: url('');
+    background-size: cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+/* Centered Content */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(75, 75, 250, 0.3);
+    border-radius: 3px;
+}
+
+.center h1 {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    text-shadow: 6px 3px 9px #000000;
+    text-transform: uppercase;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to Font Awesome latest version (5.15.4) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Link to Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navigation Menu -->
+<div class="menu">
+    <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <ul class="li-size">
+            <li><a href="login.php"></a></li>
+            <li>
+                <a href="index.html" class="image">
+                    <div class="content">
+                        <img src="image0015.jpeg" class="logoImg" alt="Icon"/>
+                    </div>
+                </a>
+            </li>
+            <li class="home"><a href="#">الصفحة الرئيسية</a></li>
+            <li><a href="#news">حول الموقع</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">منتجاتنا</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </li>
+            <div class="icon-container">
+                <a href="payment.php">
+                    <i class="fa fa-shopping-bag" style="font-size:33px; position: relative; top: 25px; left: 1050px;" value="5"></i>
+                </a>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<!-- Content Section -->
+<span class="button_add">عرض الكل</span>
+<h2 class="buttons_right" style="text-align:right;">الحلويات</h2>
+
+<!-- Swiper Carousel -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- Swiper Slide 1 -->
+        <div class="swiper-slide">
+            <div class="column">
+                <div class="row">
+                    <div class="card">
+                        <img src="sweet_001.jpg" alt="Cake 1" class="img_card">
+                        <h1>كيكة السينابون</h1>
+                        <p class="price">BD7</p>
+                        <p>Some text about the cake. Super delicious and fluffy lorem ipsum cake. Lorem ipsum cake lorem ipsum.</p>
+                        <button class="button_cart" data-name="كيكة الفواكه" data-price="6">
+                            <span>اضافة للسلة</span><i class="fa fa-shopping-bag"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper Slide 2 -->
+        <div class="swiper-slide">
+            <div class="column">
+                <div class="card">
+                    <img src="sweet_002.jpg" alt="Cake 2" class="img_card">
+                    <h1>كيكة السينابون</h1>
+                    <p class="price">BD7</p>
+                    <p>Some text about the cake. Super delicious and fluffy lorem ipsum cake. Lorem ipsum cake lorem ipsum.</p>
+                    <button class="button_cart" data-name="كيكة الفواكه" data-price="6">
+                        <span>اضافة للسلة</span><i class="fa fa-shopping-bag"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper Slide 3 -->
+        <div class="swiper-slide">
+            <div class="column">
+                <div class="card">
+                    <img src="sweet_003.jpg" alt="Cake 3" class="img_card">
+                    <h1>كيكة السينابون</h1>
+                    <p class="price">BD7</p>
+                    <p>Some text about the cake. Super delicious and fluffy lorem ipsum cake. Lorem ipsum cake lorem ipsum.</p>
+                    <button class="button_cart" data-name="كيكة الفواكه" data-price="6">
+                        <span>اضافة للسلة</span><i class="fa fa-shopping-bag"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper Slide 4 -->
+        <div class="swiper-slide">
+            <div class="column">
+                <div class="card">
+                    <img src="sweet_004.jpg" alt="Cake 4" class="img_card">
+                    <h1>كيكة السينابون</h1>
+                    <p class="price">BD7</p>
+                    <p>Some text about the cake. Super delicious and fluffy lorem ipsum cake. Lorem ipsum cake lorem ipsum.</p>
+                    <button class="button_cart" data-name="كيكة الفواكه" data-price="6">
+                        <span>اضافة للسلة</span><i class="fa fa-shopping-bag"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Swiper Slide 5 -->
+        <div class="swiper-slide">
+            <div class="column">
+                <div class="card">
+                    <img src="sweet_004.jpg" alt="Cake 5" class="img_card">
+                    <h1>كيكة السينابون</h1>
+                    <p class="price">BD7</p>
+                    <p>Some text about the cake. Super delicious and fluffy lorem ipsum cake. Lorem ipsum cake lorem ipsum.</p>
+                    <button class="button_cart" data-name="كيكة الفواكه" data-price="6">
+                        <span>اضافة للسلة</span><i class="fa fa-shopping-bag"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper Pagination and Navigation -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<!-- Button to go to Cart -->
+<div style="text-align: center;">
+    <a href="payment.php" class="button-cart">Go to Cart</a>
+</div>
+
+<!-- Footer Section -->
+<div class="footer">
+    <div class="footer-right">
+        <h2>hello</h2>
+        <p class="footer-rights">This website is for me only</p>
+    </div>
+    <div class="footer-center">
+        <a href="#" class="footer-link">الصفحة الرئيسية</a>
+        <a href="#" class="footer-link">حول الموقع</a>
+        <a href="#" class="footer-link">منتجاتنا</a>
+    </div>
+    <div class="footer-left">
+        <p>مملكة البحرين</p>
+        <p>الحد</p>
+        <p>+97336464416</p>
+        <a href="mailto:jassim.alhurumi09@gmail.com" class="footer-email">jassim.alhurumi09@gmail.com</a>
+    </div>
+</div>
+   <script>
+     function initSwiper() {
+        var screenWidth = window.innerWidth;
+        var swiperConfig = {
+            slidesPerView: 'auto', // Number of slides per view
+            spaceBetween: 5, // Space between slides
+            // Pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        };
+
+      
+
+
+
+        // Initialize Swiper with the configured options
+        var swiper = new Swiper('.swiper-container', swiperConfig);
+    }
+
+    // Function to set card size dynamically
+    function setCardSize(width, height) {
+        var cards = document.querySelectorAll('.card');
+        cards.forEach(function(card) {
+            card.style.width = width + 'px';
+            card.style.height = height + 'px';
+        });
+    }
+
+    // Initialize Swiper on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        initSwiper();
+    });
+
+    // Reinitialize Swiper when the window is resized
+    window.addEventListener('resize', function() {
+        initSwiper();
+    });
+
+
+function toggleMenu() {
+    var menu = document.querySelector(".menu ul");
+    if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
+    } else {
+        menu.classList.add("show");
+    }
+}
+</script>
+
+
+<script>
+   var x = 70
+   console.log("hi how are you")
+   console.log(x)
+</script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 10,
+         
+        });
+
+        // Function to add product to the cart
+        function addToCart(event) {
+            const button = event.target.closest('button');
+            const productName = button.getAttribute('data-name');
+            const productPrice = parseFloat(button.getAttribute('data-price'));
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ productName, productPrice });
+
+            // Save the updated cart to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            alert(`${productName} has been added to your cart!`);
+        }
+
+        // Add event listeners to all add-to-cart buttons
+        const addToCartButtons = document.querySelectorAll('.button_cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', addToCart);
+        });
+    </script>
+
+
+
+
+ 
+</body>
+</html>  
