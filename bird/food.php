@@ -43,7 +43,7 @@ $count = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
                 <div class="col-md-4 mb-4">
                     <div class="card h-100 shadow-sm">
                         <?php if (!empty($row["image"])): ?>
-                            <img src="<?= htmlspecialchars($row["image"]) ?>" class="card-img-top" alt="<?= htmlspecialchars($row["name"]) ?>" style="height: 200px; object-fit: cover;">
+                        <img src="uploads/<?= htmlspecialchars(basename($row["image"])) ?>" class="card-img-top" alt="<?= htmlspecialchars($row["name"]) ?>" style="height: 200px; object-fit: cover;">
                         <?php endif; ?>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title"><?= htmlspecialchars($row["name"]) ?></h5>
