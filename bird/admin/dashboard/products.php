@@ -64,7 +64,7 @@ $result = $conn->query($sql);
                     <div class="card h-100 shadow-sm">
                         <?php if (!empty($row['image'])): ?>
                             <!-- ✅ الحل هنا -->
-<img src="/birds/<?= htmlspecialchars($row['image']) ?>" ...>
+                            <img src="../../uploads/<?= htmlspecialchars($row['image']) ?>" class="card-img-top" alt="صورة المنتج" style="height: 200px; object-fit: cover;">
                             <?php endif; ?>
                         <div class="card-body">
                             <h5 class="card-title"><?= htmlspecialchars($row['name']) ?></h5>
