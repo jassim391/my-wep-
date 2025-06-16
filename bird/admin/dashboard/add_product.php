@@ -29,15 +29,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     $imagePath = "";
 
-    // رفع الصورة
-    if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
-        $uploadDir = 'uploads/';
-        $fileName = basename($_FILES["image"]["name"]);
-        $targetFile = $uploadDir . time() . "_" . $fileName;
-        if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
-            $imagePath = $targetFile;
-        }
+   // رفع الصورة
+if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
+    $uploadDir = '../../uploads/';
+    $fileName = time() . "_" . basename($_FILES["image"]["name"]);
+    $targetFile = $uploadDir . $fileName;
+
+    if (move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile)) {
+        $imagePath = $fileName; // فقط اسم الصورة
     }
+}
 
     // إدخال المنتج في قاعدة البيانات
     $sql = "INSERT INTO products (name, description, price, stock, fk_category, image)
